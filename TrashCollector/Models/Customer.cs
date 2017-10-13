@@ -42,7 +42,7 @@ namespace TrashCollector.Models
         public int? CreditCard { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM}", ApplyFormatInEditMode = true )]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM}", ApplyFormatInEditMode = true )] // Make this secure
         public object ExpDate { get; set; }
 
 
