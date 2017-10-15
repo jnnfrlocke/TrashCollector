@@ -7,10 +7,10 @@ namespace TrashCollector
 {
     public class Customer
     {
-        public void EnterNewCustomer()
-        {
+        //public void EnterNewCustomer()
+        //{
 
-        }
+        //}
 
         public void ChangePickupDayOneWeek()
         {

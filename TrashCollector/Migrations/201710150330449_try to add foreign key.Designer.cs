@@ -7,13 +7,13 @@ namespace TrashCollector.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Addcustomers : IMigrationMetadata
+    public sealed partial class trytoaddforeignkey : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Addcustomers));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(trytoaddforeignkey));
         
         string IMigrationMetadata.Id
         {
-            get { return "201710131850463_Add customers"; }
+            get { return "201710150330449_try to add foreign key"; }
         }
         
         string IMigrationMetadata.Source
