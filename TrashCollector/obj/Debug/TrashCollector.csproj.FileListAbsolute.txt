@@ -84,3 +84,10 @@ C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollect
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.csproj.GenerateResource.Cache
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.fixseconduserIdcolumn.resources
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.AddStatecolumntoCustomermodel.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Resetfortoday.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Resetchanges.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.MoveCustomerinfotoAspNetUsers.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.AddWastePickupsmodel.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.RemoveunnecessaryCustomerIDcolumnfromWastePickups.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Setforeignkey.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.csproj.CoreCompileInputs.cache

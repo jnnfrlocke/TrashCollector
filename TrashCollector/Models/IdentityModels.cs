@@ -3,12 +3,35 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
 
 namespace TrashCollector.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+       
+        [Display(Name = "Street Number")]
+        public int StreetNumber { get; set; }
+
+        [Display(Name = "Street Name")]
+        public string StreetName { get; set; }
+
+        public string Apartment { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        [Display(Name = "Zip Code")]
+        public int ZipCode { get; set; }
+
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -20,8 +43,6 @@ namespace TrashCollector.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        //create dbSets
-
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {  
@@ -32,6 +53,7 @@ namespace TrashCollector.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<TrashCollector.Models.Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<WastePickups> Pickups { get; set; }
     }
 }

@@ -1,0 +1,74 @@
+﻿@model TrashCollector.Models.WastePickups
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WastePickups</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Begin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Begin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionDates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionDates)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostPerPickup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostPerPickup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

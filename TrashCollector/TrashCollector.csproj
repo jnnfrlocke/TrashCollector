@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -214,12 +215,38 @@
     <Compile Include="Migrations\201710150343399_Add State column to Customer model.Designer.cs">
       <DependentUpon>201710150343399_Add State column to Customer model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710171507099_Reset for today.cs" />
+    <Compile Include="Migrations\201710171507099_Reset for today.Designer.cs">
+      <DependentUpon>201710171507099_Reset for today.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710171536530_Reset changes.cs" />
+    <Compile Include="Migrations\201710171536530_Reset changes.Designer.cs">
+      <DependentUpon>201710171536530_Reset changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710171746368_Move Customer info to AspNetUsers.cs" />
+    <Compile Include="Migrations\201710171746368_Move Customer info to AspNetUsers.Designer.cs">
+      <DependentUpon>201710171746368_Move Customer info to AspNetUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710172016317_Add WastePickups model.cs" />
+    <Compile Include="Migrations\201710172016317_Add WastePickups model.Designer.cs">
+      <DependentUpon>201710172016317_Add WastePickups model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710172027566_Remove unnecessary CustomerID column from WastePickups.cs" />
+    <Compile Include="Migrations\201710172027566_Remove unnecessary CustomerID column from WastePickups.Designer.cs">
+      <DependentUpon>201710172027566_Remove unnecessary CustomerID column from WastePickups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710172052308_Set foreign key.cs" />
+    <Compile Include="Migrations\201710172052308_Set foreign key.Designer.cs">
+      <DependentUpon>201710172052308_Set foreign key.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\WastePickups.cs" />
+    <Compile Include="Controllers\WastePickupsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="WasteCollector.cs" />
@@ -227,6 +254,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrapSandstone.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -250,7 +278,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -289,6 +319,12 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Manage\NewEdit.cshtml" />
+    <Content Include="Views\WastePickups\Create.cshtml" />
+    <Content Include="Views\WastePickups\Delete.cshtml" />
+    <Content Include="Views\WastePickups\Details.cshtml" />
+    <Content Include="Views\WastePickups\Edit.cshtml" />
+    <Content Include="Views\WastePickups\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,6 +349,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710150343399_Add State column to Customer model.resx">
       <DependentUpon>201710150343399_Add State column to Customer model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171507099_Reset for today.resx">
+      <DependentUpon>201710171507099_Reset for today.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171536530_Reset changes.resx">
+      <DependentUpon>201710171536530_Reset changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710171746368_Move Customer info to AspNetUsers.resx">
+      <DependentUpon>201710171746368_Move Customer info to AspNetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710172016317_Add WastePickups model.resx">
+      <DependentUpon>201710172016317_Add WastePickups model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710172027566_Remove unnecessary CustomerID column from WastePickups.resx">
+      <DependentUpon>201710172027566_Remove unnecessary CustomerID column from WastePickups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710172052308_Set foreign key.resx">
+      <DependentUpon>201710172052308_Set foreign key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,80 @@
+﻿@model TrashCollector.Models.WastePickups
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WastePickups</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Begin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Begin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionDates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionDates)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostPerPickup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostPerPickup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

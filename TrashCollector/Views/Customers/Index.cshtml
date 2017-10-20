@@ -47,9 +47,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Balance)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreditCard)
-        </th>
+       
         <th></th>
     </tr>
 
@@ -91,9 +89,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Balance)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreditCard)
-        </td>
+        
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |

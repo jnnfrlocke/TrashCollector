@@ -79,6 +79,31 @@ namespace TrashCollector.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set;  }
+
+        [Display(Name = "Street Number")]
+        public int StreetNumber { get; set; }
+
+        [Display(Name = "Street Name")]
+        public string StreetName { get; set; }
+
+        public string Apartment { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        [Display(Name = "Zip Code")]
+        public int ZipCode { get; set; }
+
     }
 
     public class ResetPasswordViewModel
