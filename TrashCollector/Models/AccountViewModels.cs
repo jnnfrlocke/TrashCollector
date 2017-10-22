@@ -80,6 +80,9 @@ namespace TrashCollector.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        // User Role Name
+        public string Name { get; set; }
+
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 

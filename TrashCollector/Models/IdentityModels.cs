@@ -31,6 +31,7 @@ namespace TrashCollector.Models
         [Display(Name = "Zip Code")]
         public int ZipCode { get; set; }
 
+       
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
@@ -51,6 +52,7 @@ namespace TrashCollector.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+            
         }
 
         public DbSet<Customer> Customers { get; set; }
