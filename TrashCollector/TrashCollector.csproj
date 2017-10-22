@@ -240,6 +240,10 @@
     <Compile Include="Migrations\201710172052308_Set foreign key.Designer.cs">
       <DependentUpon>201710172052308_Set foreign key.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710220336035_Change CustomerID in WastePickups to string.cs" />
+    <Compile Include="Migrations\201710220336035_Change CustomerID in WastePickups to string.Designer.cs">
+      <DependentUpon>201710220336035_Change CustomerID in WastePickups to string.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -328,6 +332,7 @@
     <Content Include="Views\WastePickups\Index.cshtml" />
     <Content Include="Views\Role\Index.cshtml" />
     <Content Include="Views\Role\Create.cshtml" />
+    <Content Include="Views\Manage\ChangePickupDay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -370,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710172052308_Set foreign key.resx">
       <DependentUpon>201710172052308_Set foreign key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710220336035_Change CustomerID in WastePickups to string.resx">
+      <DependentUpon>201710220336035_Change CustomerID in WastePickups to string.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

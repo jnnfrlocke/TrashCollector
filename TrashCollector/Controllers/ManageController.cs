@@ -15,6 +15,7 @@ namespace TrashCollector.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         public ManageController()
         {
@@ -98,6 +99,35 @@ namespace TrashCollector.Controllers
             }
             return RedirectToAction("ManageLogins", new { Message = message });
         }
+
+        //GET: /Manage/ChangePickupDay
+        public ActionResult ChangePickupDay()
+        {
+            return View();
+        }
+
+        // POST: /Manage/ChangePickupDay
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ChangePickupDay(WastePickups model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            string id = User.Identity.GetUserId();
+            string wastePickups = model.CustomerID;    //db.Pickups.Find(id);
+            //if (id == wastePickups)
+
+            if (wastePickups == null)
+            {
+                return HttpNotFound();
+            }
+            return View();
+
+        }
+
+
 
         //
         // GET: /Manage/AddPhoneNumber

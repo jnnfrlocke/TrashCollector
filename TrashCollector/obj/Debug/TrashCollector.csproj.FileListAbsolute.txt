@@ -91,3 +91,4 @@ C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollect
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.RemoveunnecessaryCustomerIDcolumnfromWastePickups.resources
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Setforeignkey.resources
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.csproj.CoreCompileInputs.cache
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.ChangeCustomerIDinWastePickupstostring.resources

@@ -13,13 +13,15 @@ namespace TrashCollector.Models
         public int Id { get; set; }
         
         public ApplicationUser Customer { get; set; }
-        public int CustomerID { get; set; }
+        public string CustomerID { get; set; }
 
         [Display(Name = "Collection Day")]
         public string CollectionDay { get; set; }
 
+        [Display(Name = "Vacation Hold Begins")]
         public string Begin { get; set; }
 
+        [Display(Name = "Vacation Hold Ends")]
         public string End { get; set; }
 
         [Display(Name = "Collection Dates")]
@@ -30,4 +32,12 @@ namespace TrashCollector.Models
 
         public int Balance { get; set; }
     }
+
+    public class ChangePickupViewModel
+    {
+        [Required]
+        [Display(Name = "Collection Day")]
+        public string CollectionDay { get; set; }
+    }
+
 }

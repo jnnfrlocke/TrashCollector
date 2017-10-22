@@ -15,6 +15,13 @@ namespace TrashCollector.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        public string GetUser()
+        {
+            string user = System.Web.HttpContext.Current.User.Identity.GetUserId();
+            return user;
+        }
+        
+
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -159,7 +166,7 @@ namespace TrashCollector.Controllers
                 if (result.Succeeded)
                 {
                     //Assign Role to user Here 
-                    await this.UserManager.AddToRoleAsync(user.Id, model.Name);
+                    await UserManager.AddToRoleAsync(user.Id, model.Name);
                     //Ends Here
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
