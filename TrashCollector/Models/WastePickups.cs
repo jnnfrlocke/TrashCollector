@@ -15,6 +15,21 @@ namespace TrashCollector.Models
         public ApplicationUser Customer { get; set; }
         public string CustomerID { get; set; }
 
+        [Display(Name = "Street Number")]
+        public int StreetNumber { get; set; }
+
+        [Display(Name = "Street Name")]
+        public string StreetName { get; set; }
+
+        public string Apartment { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        [Display(Name = "Zip Code")]
+        public string Zip { get; set; }
+
         [Display(Name = "Collection Day")]
         public string CollectionDay { get; set; }
 

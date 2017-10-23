@@ -244,6 +244,30 @@
     <Compile Include="Migrations\201710220336035_Change CustomerID in WastePickups to string.Designer.cs">
       <DependentUpon>201710220336035_Change CustomerID in WastePickups to string.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710222052576_Update WastePickup Model.cs" />
+    <Compile Include="Migrations\201710222052576_Update WastePickup Model.Designer.cs">
+      <DependentUpon>201710222052576_Update WastePickup Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710222159051_Update data type for Zip code in user talble.cs" />
+    <Compile Include="Migrations\201710222159051_Update data type for Zip code in user talble.Designer.cs">
+      <DependentUpon>201710222159051_Update data type for Zip code in user talble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710222204382_Add foreign key to pass zip code to wastepickups.cs" />
+    <Compile Include="Migrations\201710222204382_Add foreign key to pass zip code to wastepickups.Designer.cs">
+      <DependentUpon>201710222204382_Add foreign key to pass zip code to wastepickups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710222217352_Update foreign key.cs" />
+    <Compile Include="Migrations\201710222217352_Update foreign key.Designer.cs">
+      <DependentUpon>201710222217352_Update foreign key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710222322233_Update foreign key2.cs" />
+    <Compile Include="Migrations\201710222322233_Update foreign key2.Designer.cs">
+      <DependentUpon>201710222322233_Update foreign key2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710222334108_Remove foreign key.cs" />
+    <Compile Include="Migrations\201710222334108_Remove foreign key.Designer.cs">
+      <DependentUpon>201710222334108_Remove foreign key.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -333,6 +357,7 @@
     <Content Include="Views\Role\Index.cshtml" />
     <Content Include="Views\Role\Create.cshtml" />
     <Content Include="Views\Manage\ChangePickupDay.cshtml" />
+    <Content Include="Views\WastePickups\TodaysPickups.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -378,6 +403,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710220336035_Change CustomerID in WastePickups to string.resx">
       <DependentUpon>201710220336035_Change CustomerID in WastePickups to string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222052576_Update WastePickup Model.resx">
+      <DependentUpon>201710222052576_Update WastePickup Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222159051_Update data type for Zip code in user talble.resx">
+      <DependentUpon>201710222159051_Update data type for Zip code in user talble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222204382_Add foreign key to pass zip code to wastepickups.resx">
+      <DependentUpon>201710222204382_Add foreign key to pass zip code to wastepickups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222217352_Update foreign key.resx">
+      <DependentUpon>201710222217352_Update foreign key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222322233_Update foreign key2.resx">
+      <DependentUpon>201710222322233_Update foreign key2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222334108_Remove foreign key.resx">
+      <DependentUpon>201710222334108_Remove foreign key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -92,3 +92,9 @@ C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollect
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Setforeignkey.resources
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.csproj.CoreCompileInputs.cache
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.ChangeCustomerIDinWastePickupstostring.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.UpdateWastePickupModel.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.UpdatedatatypeforZipcodeinusertalble.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Addforeignkeytopasszipcodetowastepickups.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Updateforeignkey.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Updateforeignkey2.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Removeforeignkey.resources

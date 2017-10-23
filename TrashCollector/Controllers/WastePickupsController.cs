@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using TrashCollector.Models;
 
 namespace TrashCollector.Models
 {
@@ -113,6 +114,23 @@ namespace TrashCollector.Models
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult TodaysPickups()
+        {
+            int tZip = 53202;
+            string todayZip = tZip.ToString();
+            //var identityPickup = db.Users.Where(y => y.ZipCode == todayZip);
+
+            var today = DateTime.Now.DayOfWeek.ToString();
+
+            var pickupToday = db.Pickups.Where(x => x.CollectionDay == today); 
+            //var zipToday = pickupToday.Where(y => y.Zip == todayZip);
+
+            
+            return View(pickupToday);
+        }
+
+
 
         protected override void Dispose(bool disposing)
         {
