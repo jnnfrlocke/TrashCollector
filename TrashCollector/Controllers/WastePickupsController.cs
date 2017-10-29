@@ -7,12 +7,14 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using TrashCollector.Models;
+using Microsoft.AspNet.Identity;
 
 namespace TrashCollector.Models
 {
     public class WastePickupsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private UserManager<ApplicationUser> UserManager { get; set; }
 
         // GET: WastePickups
         public ActionResult Index()
@@ -21,18 +23,26 @@ namespace TrashCollector.Models
         }
 
         // GET: WastePickups/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details()
         {
-            if (id == null)
+            string id = User.Identity.GetUserId();
+
+            var detailData = from wp in db.Pickups
+                             where (wp.CustomerID == id)
+                             select wp;
+
+            WastePickups viewData = new WastePickups();
+            foreach (WastePickups result in detailData)
+            {
+                viewData = result;
+            }
+
+            if (viewData.CustomerID == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            WastePickups wastePickups = db.Pickups.Find(id);
-            if (wastePickups == null)
-            {
-                return HttpNotFound();
-            }
-            return View(wastePickups);
+            
+            return View(viewData);
         }
 
         // GET: WastePickups/Create
@@ -46,10 +56,11 @@ namespace TrashCollector.Models
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CustomerID,CollectionDay,Begin,End,CollectionDates,CostPerPickup,Balance")] WastePickups wastePickups)
+        public ActionResult Create([Bind(Include = "CollectionDay,Begin,End")] WastePickups wastePickups)
         {
             if (ModelState.IsValid)
             {
+
                 db.Pickups.Add(wastePickups);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -84,8 +95,9 @@ namespace TrashCollector.Models
             {
                 db.Entry(wastePickups).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+            return RedirectToAction("Index");
             }
+
             return View(wastePickups);
         }
 
@@ -117,21 +129,28 @@ namespace TrashCollector.Models
 
         public ActionResult TodaysPickups()
         {
-            int tZip = 53202;
-            string todayZip = tZip.ToString();
-            //var identityPickup = db.Users.Where(y => y.ZipCode == todayZip);
+
+            string id = User.Identity.GetUserId();
+            
+            var todayZipQuery = from wp in db.Pickups
+                             where (wp.CustomerID == id)
+                             select wp.Zip;
+            
+            string todayZip = null;
+
+            foreach (string result in todayZipQuery)
+            {
+               todayZip = result;
+            }
 
             var today = DateTime.Now.DayOfWeek.ToString();
 
-            var pickupToday = db.Pickups.Where(x => x.CollectionDay == today); 
-            //var zipToday = pickupToday.Where(y => y.Zip == todayZip);
-
+            var pickupToday = db.Pickups.Where(x => x.CollectionDay == today);
+            var zipToday = pickupToday.Where(y => y.Zip == todayZip);
             
-            return View(pickupToday);
+            return View(zipToday);
         }
-
-
-
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)

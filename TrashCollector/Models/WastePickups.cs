@@ -11,7 +11,10 @@ namespace TrashCollector.Models
     {
         [Key]
         public int Id { get; set; }
-        
+
+        //[Display(Name = "CollectionDay")]
+        //public string CollectionDay { get; set; }
+
         public ApplicationUser Customer { get; set; }
         public string CustomerID { get; set; }
 
@@ -47,12 +50,4 @@ namespace TrashCollector.Models
 
         public int Balance { get; set; }
     }
-
-    public class ChangePickupViewModel
-    {
-        [Required]
-        [Display(Name = "Collection Day")]
-        public string CollectionDay { get; set; }
-    }
-
 }

@@ -1,0 +1,38 @@
+﻿@model TrashCollector.Models.GetZip
+
+@{
+    ViewBag.Title = "Get Zip Code";
+}
+
+<h2>Please enter the zip code you are servicing today.</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+}
+<div class="form-horizontal">
+    @*<h4>Collection Information</h4>*@
+    <hr />
+    @using (Html.BeginForm("TodaysPickups", "WastePickups"))
+    {
+        @Html.EditorFor(model => model.ZipCode, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ActionLink("Submit", "TodaysPickups", Model.ZipCode, "WastePickups")
+    @*<input class="button" id="submit" type="submit" value="Submit" />*@
+    }
+   @*<div class="form-group">
+        @Html.Display("What zip code are you picking up from today?")
+        @Html.EditorFor(model => model.Zip, new { htmlAttributes = new { @class = "form-control" } })
+       @Html.ActionLink("Submit", "TodaysPickups", new { zip = Model.Zip }, "WastePickups")
+    </div>*@
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
