@@ -141,3 +141,9 @@ C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollect
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.csproj.CoreCompileInputs.cache
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.IhavenoideawhatIchangedthistime.resources
 C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\obj\Debug\TrashCollector.Migrations.Addgetzipmodel.resources
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\Google.Apis.Core.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\Google.Apis.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\Google.Apis.PlatformServices.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\GoogleMaps.LocationServices.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\Google.Apis.xml
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\TrashCollector\TrashCollector\TrashCollector\bin\Google.Apis.Core.xml

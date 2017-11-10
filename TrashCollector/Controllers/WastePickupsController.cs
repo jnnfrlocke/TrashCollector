@@ -95,7 +95,7 @@ namespace TrashCollector.Models
             {
                 db.Entry(wastePickups).State = EntityState.Modified;
                 db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Details");
             }
 
             return View(wastePickups);
